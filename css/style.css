@@ -1,0 +1,242 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #6e4c8b;
+	padding-top: 2%;
+}
+@font-face {
+
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+.general {
+	width: 876px;
+	height: 627px;
+	background-image: url(../imgs/bg.png);
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.header {
+	padding-top: 23px;
+	padding-left: 65px;
+	padding-right: 60px
+}
+.header__logo, .header__nav, .header__menu {
+	display: inline-block;
+}
+.header__nav {
+	margin-left: 165px;
+	width: 405px;
+	height: 25px;
+	vertical-align: top;
+}
+
+.nav__item {
+	display: inline-block;
+}
+.nav__item:nth-child(n+2) {
+	margin-left: 43px;
+}
+.nav__item a {
+	text-decoration: none;
+	color: #ffffff;
+	vertical-align: top;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.nav__item a:hover {
+	text-shadow: 0 0 5px rgba(225, 225, 225, 0.9);
+}
+.nav__item:nth-child(2) a {
+	border-bottom: 1px solid #ffffff;
+}
+.header__menu {
+	margin-left: 110px;
+}
+.header__menu:hover {
+	transform: scale(1.08);
+}
+.main {
+	width: 750px;
+	font-size: 0;
+	margin: 8% auto;
+}
+.main__cross, .main__info {
+	display: inline-block;
+}
+.main__cross {
+	width: 500px;
+	height: 430px;
+	background-image: url(../imgs/bgcross.png);
+}
+
+.main__cross_nike {
+	margin-top: 20%;
+	margin-left: 9%;
+	margin-bottom: 2%;
+}
+.main__cross_plus:hover {
+	transform: scale(1.1);
+}
+.main__cross_nikemini {
+	width: 168px;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main__cross_nikemini img {
+	border: 2px solid white;
+	border-radius: 3px;
+}
+.main__cross_nikemini img:hover {
+	transform: scale(1.1);
+}
+.main__cross_nikemini img:nth-child(n+2) {
+	margin-left: 15px;
+}
+.main__info {
+	width: 250px;
+	height: 430px;
+	background-color: #ffffff;
+	vertical-align: top;
+	padding: 7% 4%;
+}
+.info__new {
+	height: 25px;
+	width: 40px;
+	background-color: #ffa60d;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.8em;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.main__info h1 {
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	color: #000000;
+	margin-bottom: 17px;
+}
+.main__info h1 span {
+	color: #5e4fff;
+}
+.main__info h3 {
+	color: #000000;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+.main__info h2 {
+	color: #000000;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+}
+.form__label {
+	color: #000000;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+}
+
+/* Непонятно что с этим сделать
+.form__label input {
+
+}
+.form__label:hover {
+	border: 1px solid black;
+}
+input:checked .form__label {
+	border: 1px solid black;
+}
+*/
+
+.form__add {
+	margin-top: 37px;
+	width: 118px;
+	height: 30px;
+	background-color: #a200b8;
+	color: #ffffff;
+	border: none;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+}
+.form__add:hover {
+	box-shadow: 0 0 15px rgba(162, 0, 184, 0.8);
+}
+.form__wishlist {
+	width: 118px;
+	height: 30px;
+	border: 1px solid #0f0f0f;
+	background-color: #ffffff;
+	margin-top: 5px;
+	color: #000000;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+}
+.form__wishlist:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+.bgconteiner1 {
+	width: 805px;
+	height: 390px;
+	background-color: rgba(225, 225, 225, 0.3);
+	position: absolute;
+	z-index: -2;
+	top: 138px;
+	left: 36px;
+}
+.bgconteiner1:hover {
+	transform: scale(1.01);
+}
+.bgconteiner2 {
+	width: 776px;
+	height: 406px;
+	background-color: rgba(225, 225, 225, 0.3);
+	position: absolute;
+	z-index: -2;
+	top: 130px;
+	left: 50px;
+}
+.bgconteiner2:hover {
+	transform: scale(1.01);
+}
