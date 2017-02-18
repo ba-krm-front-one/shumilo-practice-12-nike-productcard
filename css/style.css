@@ -171,6 +171,9 @@ select {
 	font-size: 22px;
 	font-weight: 300;
 }
+.main__info p {
+
+}
 .form__label {
 	color: #000000;
 	font-family: Roboto, sans-serif;
